@@ -1,0 +1,149 @@
+/*Fonts*/
+@import url(https://fonts.googleapis.com/css?family=Hammersmith+One);/*font-family: 'Hammersmith One', sans-serif;*/
+
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);/*font-family: 'Playfair Display', serif;*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:700,300,900,500);/*font-family: 'Roboto', sans-serif;*/
+
+header{
+    position: relative;
+}
+
+.menu-area {
+    margin-top: 32px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.mainmenu{
+    text-align:right;
+}
+
+.mainmenu li {
+    display: inline-block;
+    list-style: outside none none;
+    padding-left: 20px;
+    padding-right: 0;
+}
+.mainmenu a {
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+.mainmenu li:hover a,
+.current-menu-item a{
+    color: #00e0d0;
+    text-decoration: none;
+}
+
+
+
+
+html, body, header, .slider-area, .slider-area div {
+    height: 100%;
+}
+.slider-area .slider .slide-table div{
+    height: auto;
+}
+.slide-table {
+    display: table;
+    width: 100%;
+}
+.slide-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.slider-area {
+  min-height: 240px;
+}
+
+.slide-single-item{
+    background-image: url('img/slider-bg-1.jpg');
+    position: relative;
+    color: #fff;
+}
+.slide-single-item::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left:0;
+    background: rgb(9,5,47);
+    background: -moz-linear-gradient(top,  rgb(9,5,47) 0%, rgb(49,29,94) 100%);
+    background: -webkit-linear-gradient(top,  rgb(9,5,47) 0%,rgb(49,29,94) 100%);
+    background: linear-gradient(to bottom,  rgb(9,5,47) 0%,rgb(49,29,94) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#09052f', endColorstr='#311d5e',GradientType=0 );
+    opacity: .85;
+    width: 100%;
+    height: 100%;
+}
+
+.slide-contetns h2 {
+  font-family: "Roboto";
+  font-size: 32px;
+  font-weight: 900;
+  position: relative;
+  padding: 15px 0;
+}
+.slide-contetns h2::after {
+  background-color: #00e0d0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 45%;
+  position: absolute;
+  top: 100%;
+  width: 100px;
+}
+.slide-contetns p {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 300;
+  padding: 10px 0 25px;
+}
+.slide-btn{
+    color: #00e0d0;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 16px;
+    color: #00e0d0;
+    text-transform: uppercase;
+    border: 1px solid;
+    padding: 10px;
+}
+.slide-btn:hover{
+    color: #00e0d0;
+    text-decoration: none;
+}
+.carousel-indicators li.active {
+  background-color: #00E0D0;
+  border: none;
+}
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
