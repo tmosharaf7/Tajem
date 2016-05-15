@@ -1,7 +1,7 @@
 /*Fonts*/
 @import url(https://fonts.googleapis.com/css?family=Hammersmith+One);/*font-family: 'Hammersmith One', sans-serif;*/
 
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display);/*font-family: 'Playfair Display', serif;*/
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:700);/*font-family: 'Playfair Display', serif;*/
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:700,300,900,500);/*font-family: 'Roboto', sans-serif;*/
 
@@ -146,4 +146,46 @@ html, body, header, .slider-area, .slider-area div {
 }
 .carousel-fade .carousel-control {
   z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+section#our-story-area {
+  padding: 70px 0;
+}
+.our-story-contents > h2 {
+  color: #413d4b;
+  font-family: "playfair display";
+  font-size: 22px;
+  font-weight: 700;
+  padding: 0 0 10px;
+  text-transform: uppercase;
+}
+.our-story-contents p {
+  color: #413d4b;
+  font-family: "roboto";
+  font-size: 14px;
+  font-weight: 300;
+}
+.our-stry-learn-btn {
+  border: 1px solid;
+  font-size: 16px;
+  color: #00e0d0;
+  padding: 10px;
+  font-family: 'Hammersmith One', sans-serif;
+}
+.story-link-warp {
+  display: block;
+  margin-top: 40px;
+}
+.our-stry-learn-btn:hover{
+    text-decoration: none;
+    color: #00e0d0;
+    border: 1px solid;
 }
