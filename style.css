@@ -241,3 +241,63 @@ border-radius: 100%;
   font-weight: 900;
   margin-top: 33px;
 }
+
+
+section#expertise {
+  padding: 70px;
+}
+
+.section-header h1 {
+  color: #413d4b;
+  font-family: "playfair display";
+  font-size: 22px;
+}
+.section-header p {
+  font-family: "roboto";
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+}
+
+.section-header p::after{
+    position: absolute;
+}
+
+.section-header {
+  margin-bottom: 80px;
+}
+
+.expert-icon i {
+  color: #2cbccd;
+  font-size: 40px;
+}
+
+.expert-single h3 {
+  color: #413d4b;
+  font-family: "roboto";
+  font-size: 14px;
+  font-weight: 900;
+  margin: 20px 0;
+}
+
+.expert-single {
+  margin-bottom: 40px;
+}
+
+.expert-single p {
+  color: #333333;
+  font-family: "roboto";
+  font-weight: 300;
+}
+
+#expertise .container {
+  width: 100%;
+}
+
+.expert-devide{
+    position: relative;
+    background-color: #ebebeb;
+    display: block;
+    height: 1px;
+    width: 100%;
+}
