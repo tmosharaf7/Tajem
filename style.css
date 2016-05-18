@@ -157,7 +157,7 @@ html, body, header, .slider-area, .slider-area div {
 
 
 section#our-story-area {
-  padding: 70px 0;
+  padding: 50px 0;
 }
 .our-story-contents > h2 {
   color: #413d4b;
@@ -244,8 +244,9 @@ border-radius: 100%;
 
 
 section#expertise {
-  padding: 70px;
+  padding: 50px 0;
 }
+
 
 .section-header h1 {
   color: #413d4b;
@@ -259,10 +260,16 @@ section#expertise {
   position: relative;
 }
 
-.section-header p::after{
-    position: absolute;
+.section-header p::after {
+  background: #c6c4c9 none repeat scroll 0 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  margin-left: -25px;
+  position: absolute;
+  top: 30px;
+  width: 50px;
 }
-
 .section-header {
   margin-bottom: 80px;
 }
@@ -290,14 +297,92 @@ section#expertise {
   font-weight: 300;
 }
 
-#expertise .container {
-  width: 100%;
-}
-
 .expert-devide{
     position: relative;
     background-color: #ebebeb;
     display: block;
     height: 1px;
     width: 100%;
+}
+
+.team-member-single h3 {
+  color: #fff;
+  font-family: "roboto";
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+
+#team-area{
+    background: url('img/member-bg.jpg') no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    position: relative;
+    background-position: center center;
+    z-index: 1;
+}
+
+#team-area::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left:0;
+    background: rgb(9,5,47);
+    background: -moz-linear-gradient(top,  rgb(9,5,47) 0%, rgb(49,29,94) 100%);
+    background: -webkit-linear-gradient(top,  rgb(9,5,47) 0%,rgb(49,29,94) 100%);
+    background: linear-gradient(to bottom,  rgb(9,5,47) 0%,rgb(49,29,94) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#09052f', endColorstr='#311d5e',GradientType=0 );
+    opacity: .75;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+}
+
+.team-member-single span {
+  color: #fff;
+  font-family: "roboto";
+  font-size: 13px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+#team-area .section-header h1 {
+    color: #fff;
+}
+#team-area .section-header p {
+    color: #fff;
+}
+#team-area .section-header p::after {
+    background: #655b80 none repeat scroll 0 0;
+}
+.team-member-info{
+    border: 1px solid #76758a;
+    padding: 10px 0;
+}
+.member-img{
+    width: 100%;
+}
+.team-member-single {
+  margin-bottom: 50px;
+}
+
+.team-bottom {
+    clear: both;
+    color: #fff;
+    padding-top: 20px;
+}
+.team-bottom p {
+    font-family: "Roboto";
+    font-weight: 300;
+}
+.team-bottom a {
+  border: 1px solid;
+  color: #00e0d0;
+  display: inline-block;
+  font-family: "hammersmith one";
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 10px;
 }
