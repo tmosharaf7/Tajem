@@ -5,10 +5,11 @@
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:700,300,900,500);/*font-family: 'Roboto', sans-serif;*/
 
-header{
-    position: relative;
-}
 
+
+a:hover{
+    text-decoration: none;
+}
 .menu-area {
     margin-top: 32px;
   position: absolute;
@@ -58,8 +59,8 @@ html, body, header, .slider-area, .slider-area div {
     text-align: center;
 }
 
-.slider-area {
-  min-height: 240px;
+header {
+  min-height: 450px;
 }
 
 .slide-single-item{
@@ -197,7 +198,7 @@ section#our-story-area {
     position: relative;
     background-position: center center;
     color: #fff;
-    z-index: 4;
+    z-index: -2;
     overflow: hidden;
 }
 
@@ -386,3 +387,54 @@ section#expertise {
   margin-top: 10px;
   padding: 10px;
 }
+
+section#works-area {
+  padding: 50px 0;
+}
+
+.works-head h1 {
+  color: #413d4b;
+  font-family: "playfair display";
+  font-size: 22px;
+  font-weight: 900;
+  margin: 0;
+}
+.works-see-all-link a {
+  color: #413d4b;
+  font-family: "roboto";
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.works-see-all-link a:hover{
+    color: #0AE0D0;
+}
+
+
+.works-single {
+    display: block;
+    float: left;
+    width: 16.6667%;
+}
+.works-all {
+    overflow: hidden;
+}
+
+
+/****************************************************/
+.ytplayer-container {
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+#video-area::before {
+  z-index: 1;
+}
+
+.video-texts {
+    position: relative;
+    z-index: 2;
+}
+
+/****************************************************/
