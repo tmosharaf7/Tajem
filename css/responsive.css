@@ -1,0 +1,114 @@
+/* Portrait tablets and medium desktops */
+@media (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (max-width: 991px) {
+    .mainmenu li a {
+      padding: 10px;
+    }
+    .subscribe-area > button {
+      margin: 10px 0 0;
+    }
+    .social_icons a{
+        margin: 0 10px 10px 0;
+    }
+    nav.footer_nav ul li{
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Landscape phones and portrait tablets */
+@media  (max-width: 768px) {
+    .sticky-wrapper.is-sticky .sticker {
+      background: #2f2b4f none repeat scroll 0 0;
+      height: 50px;
+      margin-top: 0;
+      opacity: 0.96;
+      padding-top: 0;
+      z-index: 999;
+    }
+    .col-xs-12.menu-in-xtra-small{
+        padding: 0
+    }
+    .container-fluid.menu-in-xtra-small-container{
+        padding: 0;
+        text-align: center;
+    }
+    .mainmenu-waraper{
+        max-height: 150px;
+        padding: 00px 0 50px 0;
+        overflow: hidden;
+    }
+    .menu-area > .container{
+        padding: 0;
+    }
+    .slide-contetns h2{
+        font-size: 22px;
+    }
+    .slide-contetns h2::after{
+        left: 42%;
+    }
+    .slide-contetns p,
+    .our-story-contents > p,
+    .footer_text_widg p{
+        font-size: 10px;
+    }
+    .pirimid-img {
+        margin: 0 auto;
+        width: 180px;
+    }
+    .our-story-contents {
+      text-align: center;
+    }
+    .more-link {
+        font-size: 10px;
+    }
+    .footer_nav ul li a {
+      display: block;
+      margin-bottom: 25px;
+    }
+    .subscribe-area > input[type="email"]{
+        width: 205px;
+    }
+    .subscribe-area > button {
+      margin: 10px 0 0;
+    }
+    .social_icons a{
+        margin-bottom: 5px;
+    }
+    .footer-copyright p{
+        font-size: 12px;
+    }
+    .section-header p::after {
+      top: 45px;
+    }
+    .works-see-all-link {
+      margin-top: 10px;
+    }
+    .footer_nav ul {
+      margin-top: -30px;
+    }
+    nav.footer_nav ul li{
+        display: block;
+        float: none;
+    }
+    .our_studio,
+    .stay-in-touch {
+      margin-top: 50px;
+    }
+    .logo{
+        margin: 0;
+    }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 479px) {
+
+}
+
+@media (max-width: 320px) {
+
+}
