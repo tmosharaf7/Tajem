@@ -6,7 +6,9 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:700,300,900,500);/*font-family: 'Roboto', sans-serif;*/
 
 
-
+a{
+    cursor: pointer;
+}
 a:hover{
     text-decoration: none;
 }
@@ -20,26 +22,15 @@ body {
   z-index: 1;
 }
 
-.mainmenu{
-    text-align:right;
-}
-
-.mainmenu li {
-    display: inline-block;
-    list-style: outside none none;
-    padding-left: 20px;
-    padding-right: 0;
-}
-.mainmenu a {
-    color: #fff;
+.mainmenu li a {
+    color: #fff !important;
     font-size: 13px;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
 }
-.mainmenu li:hover a,
-.active a{
-    color: #00e0d0;
+.mainmenu li:hover a{
+    color: #00e0d0 !important;
     text-decoration: none;
 }
 .mainmenu li a:hover,
@@ -47,7 +38,16 @@ body {
     background: none;
     outline: none;
 }
-
+.mainmenu .active a {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+}
+.mainmenu > .active > a{
+    color: #00e0d0 !important;
+}
+.navbar-default{
+    background: none;
+    border: none;
+}
 
 
 html, body, header, .slider-area, .slider-area div {
@@ -405,6 +405,7 @@ section#expertise {
   font-size: 16px;
   margin-top: 10px;
   padding: 10px;
+  cursor: pointer;
   text-transform: uppercase;
 }
 
@@ -727,4 +728,28 @@ nav.footer_nav ul{
 .is-sticky .logo img {
   margin-top: -15px;
   transition: .4s
+}
+.navbar{
+    box-shadow: none;
+}
+.mainmenu-waraper.navbar-collapse.collapse.in {
+  background: #2f2b4f none repeat scroll 0 0;
+  border: medium none;
+  box-shadow: none;
+}
+.navbar-collapse {
+    border: none;
+    box-shadow: none;
+}
+.logo {
+  margin-top: -7px;
+  overflow: hidden;
+  padding: 0;
+}
+.logo > img {
+  margin-top: 0px;
+  text-align: center;
+}
+.is-sticky .logo img {
+  margin-top: 0;
 }
